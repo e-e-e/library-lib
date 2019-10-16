@@ -4,7 +4,9 @@ A collection of helpful functions for parsing and manipulating library related d
 
 ### Install
 
-`npm install --save lib-lib`
+```
+npm install --save lib-lib
+```
 
 ### Common Usage
 

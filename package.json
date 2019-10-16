@@ -20,6 +20,10 @@
   },
   "author": "e-e-e",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/e-e-e/lib-lib.git"
+  },
   "dependencies": {
     "jest": "^24.9.0"
   },
