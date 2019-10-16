@@ -24,6 +24,9 @@
     "type": "git",
     "url": "git://github.com/e-e-e/lib-lib.git"
   },
+  "keywords": [
+    "isbn"
+  ],
   "dependencies": {
     "jest": "^24.9.0"
   },
