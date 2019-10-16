@@ -1,0 +1,37 @@
+{
+  "name": "lib-lib",
+  "version": "0.0.1",
+  "description": "A collection of helpful functions for parsing and manipulating library related data.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -d",
+    "build:docs": "typedoc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest -i",
+    "test:watch": "jest --watchAll -i",
+    "lint": "eslint ./src/*.ts ./test/*.ts",
+    "lint:fix": "eslint ./src/*.ts ./test/*.ts --fix"
+  },
+  "author": "e-e-e",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.7.12",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.19.0",
+    "eslint-utils": "^1.4.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.6.4"
+  }
+}

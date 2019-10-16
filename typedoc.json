@@ -1,0 +1,7 @@
+{
+  "out": "docs",
+  "name": "LibLib Documentation",
+  "mode": "file",
+  "theme": "minimal",
+  "excludePrivate": true
+}
