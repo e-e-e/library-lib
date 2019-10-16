@@ -9,13 +9,13 @@ export class Isbn {
   isIsbn13: boolean;
 
   constructor(rawIsbn: string) {
-    const isbn = rawIsbn.replace(/[\s-]/g, "").toUpperCase();
+    const isbn = rawIsbn.replace(/[\s-]/g, '').toUpperCase();
     this.isIsbn13 = !!isbn.match(/^97(8|9)\d{10}$/);
     this.isIsbn10 = !!isbn.match(/^\d{9}(\d|X)$/);
     if (!this.isIsbn10 && !this.isIsbn13) {
-      throw new Error("Invalid Isbn");
+      throw new Error('Invalid Isbn');
     }
-    this.EAN = this.isIsbn13 ? isbn.slice(0, 3) : "978";
+    this.EAN = this.isIsbn13 ? isbn.slice(0, 3) : '978';
     const common = isbn.slice(this.isIsbn13 ? 3 : 0, -1);
     this.group = common.slice(0, 2);
     this.publisher = common.slice(2, 6);
@@ -27,7 +27,7 @@ export class Isbn {
     let s = 0;
     let t = 0;
     for (let i = 0; i < 10; i++) {
-      t += isbn[i] === "X" ? 10 : parseInt(isbn[i], 10);
+      t += isbn[i] === 'X' ? 10 : parseInt(isbn[i], 10);
       s += t;
     }
     return s % 11;
@@ -56,9 +56,9 @@ export class Isbn {
    */
   toIsbn10(): string {
     const core = this.group + this.publisher + this.title;
-    const remainder = this.checkIsbn10(core + "0");
+    const remainder = this.checkIsbn10(core + '0');
     const checkDigit = (11 - remainder) % 11;
-    return core + (checkDigit === 10 ? "X" : checkDigit);
+    return core + (checkDigit === 10 ? 'X' : checkDigit);
   }
 
   /**
@@ -66,7 +66,7 @@ export class Isbn {
    */
   toIsbn13(): string {
     const core = this.EAN + this.group + this.publisher + this.title;
-    const remainder = this.checkIsbn13(core + "0");
+    const remainder = this.checkIsbn13(core + '0');
     return core + ((10 - remainder) % 10);
   }
 
