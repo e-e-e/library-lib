@@ -1,11 +1,11 @@
-# lib-lib
+# library-lib
 
 A collection of helpful functions for parsing and manipulating library related data.
 
 ### Install
 
 ```
-npm install --save lib-lib
+npm install --save library-lib
 ```
 
 ### Common Usage
@@ -13,7 +13,7 @@ npm install --save lib-lib
 ##### Convert an isbn10 number to isbn13:
 
 ```ts
-import { Isbn } from "lib-lib";
+import { Isbn } from "library-lib";
 
 const isbn10 = '0415389550'
 
@@ -29,7 +29,7 @@ isbn13 = Isbn.toIsbn13(isbn10);
 #### Convert an isbn13 number to isbn10:
 
 ```ts
-import { Isbn } from "lib-lib";
+import { Isbn } from "library-lib";
 
 const isbn13 = '978-0-415-38955-6';
 

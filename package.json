@@ -1,5 +1,5 @@
 {
-  "name": "lib-lib",
+  "name": "library-lib",
   "version": "0.0.1",
   "description": "A collection of helpful functions for parsing and manipulating library related data.",
   "main": "lib/index.js",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/e-e-e/lib-lib.git"
+    "url": "git://github.com/e-e-e/library-lib.git"
   },
   "keywords": [
     "isbn"
