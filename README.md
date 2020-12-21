@@ -1,7 +1,5 @@
 # library-lib
 
-[![Build Status](https://travis-ci.org/e-e-e/library-lib.svg?branch=master)](https://travis-ci.org/e-e-e/library-lib)
-
 A collection of helpful functions for parsing and manipulating library related data.
 
 ### Install
