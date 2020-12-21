@@ -2,6 +2,17 @@
   "name": "library-lib",
   "version": "0.0.1",
   "description": "A collection of helpful functions for parsing and manipulating library related data.",
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-e-e/library-lib.git"
+  },
+  "homepage": "https://github.com/e-e-e/library-lib",
+  "bugs": {
+    "url": "https://github.com/e-e-e/library-lib/issues"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -20,10 +31,6 @@
   },
   "author": "e-e-e",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/e-e-e/library-lib.git"
-  },
   "keywords": [
     "isbn"
   ],
