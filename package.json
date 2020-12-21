@@ -1,6 +1,6 @@
 {
   "name": "library-lib",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A collection of helpful functions for parsing and manipulating library related data.",
   "engines": {
     "node": ">=10"
