@@ -1,5 +1,7 @@
 # library-lib
 
+![Unit tests](https://github.com/e-e-e/library-lib/workflows/Unit%20tests/badge.svg)
+
 A collection of helpful functions for parsing and manipulating library related data.
 
 ### Install

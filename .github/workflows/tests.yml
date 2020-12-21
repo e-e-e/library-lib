@@ -20,7 +20,7 @@ jobs:
           node-version: 12
       - run: |
           npm ci
-          npm lint
+          npm run lint
   unit-test:
     runs-on: ubuntu-latest
     strategy:
