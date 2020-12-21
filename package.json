@@ -2,6 +2,17 @@
   "name": "library-lib",
   "version": "0.0.1",
   "description": "A collection of helpful functions for parsing and manipulating library related data.",
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-e-e/library-lib.git"
+  },
+  "homepage": "https://github.com/e-e-e/library-lib",
+  "bugs": {
+    "url": "https://github.com/e-e-e/library-lib/issues"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -20,27 +31,22 @@
   },
   "author": "e-e-e",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/e-e-e/library-lib.git"
-  },
   "keywords": [
     "isbn"
   ],
-  "dependencies": {
-    "jest": "^24.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "@types/node": "^12.7.12",
-    "@typescript-eslint/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "^2.4.0",
-    "eslint": "^6.5.1",
-    "eslint-plugin-jest": "^22.19.0",
-    "eslint-utils": "^1.4.2",
-    "ts-jest": "^24.1.0",
-    "ts-node": "^8.4.1",
-    "typedoc": "^0.15.0",
-    "typescript": "^3.6.4"
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.14",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-utils": "^2.1.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.19.2",
+    "typescript": "^4.1.3"
   }
 }

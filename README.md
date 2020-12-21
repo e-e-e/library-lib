@@ -1,6 +1,6 @@
 # library-lib
 
-[![Build Status](https://travis-ci.org/e-e-e/library-lib.svg?branch=master)](https://travis-ci.org/e-e-e/library-lib)
+![Unit tests](https://github.com/e-e-e/library-lib/workflows/Unit%20tests/badge.svg)
 
 A collection of helpful functions for parsing and manipulating library related data.
 
@@ -8,6 +8,10 @@ A collection of helpful functions for parsing and manipulating library related d
 
 ```
 npm install --save library-lib
+```
+or 
+```
+yarn install library-lib
 ```
 
 ### Common Usage

@@ -1,0 +1,37 @@
+name: Unit tests
+
+on:
+  push:
+  pull_request:
+    branches:
+      - "**"
+
+env:
+  CI: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: |
+          npm ci
+          npm run lint
+  unit-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '10', '12', '14' ]
+    name: Unit Tests (Node ${{ matrix.node }})
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: |
+          npm ci
+          npm test
