@@ -9,6 +9,10 @@ A collection of helpful functions for parsing and manipulating library related d
 ```
 npm install --save library-lib
 ```
+or 
+```
+yarn install library-lib
+```
 
 ### Common Usage
 
