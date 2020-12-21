@@ -46,3 +46,7 @@ let isbn10 = isbn.toIsbn10());
 // or via static method
 isbn10 = Isbn.toIsbn10(isbn13);
 ```
+
+### Documentation
+
+See [TS Docs](https://e-e-e.github.io/library-lib/).
